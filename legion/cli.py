@@ -34,8 +34,7 @@ def parse_args(args=None) -> argparse.Namespace:
     parser.add_argument("--mcp-add", type=str, action="append", default=None, help="Add MCP server connection")
     parser.add_argument("--list", action="store_true", default=None, dest="list_mode", help="List background sessions")
     parser.add_argument("--compact", action="store_true", default=None, help="Compact conversation history")
-    # New flags for expanded framework
-    parser.add_argument("--github-push", type=str, default=None, help="Push to GitHub with file patterns")
+    parser.add_argument("--github-push", type=str, default=None, help="Push code to GitHub")
     parser.add_argument("--encrypt", type=str, default=None, help="Encrypt a file")
     parser.add_argument("--obfuscate", type=str, nargs="?", const=".", default=None, help="Obfuscate Python files")
     parser.add_argument("--deploy", type=str, default=None, help="Generate deployment configs: docker, compose, service")

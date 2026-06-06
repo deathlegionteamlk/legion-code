@@ -36,7 +36,6 @@ class Config:
     save_sessions: bool = True
     compact_mode: bool = False
 
-    # New fields for expanded framework
     github_token: str = ""
     github_repo: str = ""
     encryption_key: str = ""
